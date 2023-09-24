@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/css/var.css"> <!-- المتغيرات -->
+    <link rel="stylesheet" href="/css/main.css"> <!-- ملف الإستايل الأساسي -->
+    <link rel="stylesheet" href="/css/footer.css"> <!-- ملف css الفوتر -->
+    <link rel="stylesheet" href="/css/settings.css">
+    <link rel="stylesheet" href="/css/more.css">
+    <link rel="stylesheet" href="/css/animate.min.css"> <!-- مؤثرات الإنتقال -->
+    <title>إعدادات التطبيق: دليلك لتخصيص تجربتك - التقوى</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="إعدادات التطبيق: دليلك لتخصيص تجربتك - التقوى">
+    <meta property="og:site_name" content="إعدادات التطبيق: دليلك لتخصيص تجربتك - التقوى">
+    <meta name="keywords" content="إعدادات التطبيق, تكبير الخط, تحديد الموقع, أوقات الصلاة, تخصيص التطبيق">
+    <!-- صورة المعاينة للصفحة -->
+    <meta property="og:image" content="/img/preview_settings.jpg"/> 
+    <!-- وصف الصفحة -->
+    <meta property="og:description"
+        content="الصفحة تحتوي على إعدادات التطبيق التي تساعد المستخدمين على تخصيص تجربتهم. يمكن للمستخدمين تغيير حجم الخط لتحسين القراءة. كما يمكنهم تحديد الموقع الجغرافي للحصول على أوقات الصلاة الدقيقة. هذه الإعدادات تجعل التطبيق مرنًا وسهل الاستخدام." />
+    <!-- وصف الصفحة -->
+    <meta name="description"
+        content="الصفحة تحتوي على إعدادات التطبيق التي تساعد المستخدمين على تخصيص تجربتهم. يمكن للمستخدمين تغيير حجم الخط لتحسين القراءة. كما يمكنهم تحديد الموقع الجغرافي للحصول على أوقات الصلاة الدقيقة. هذه الإعدادات تجعل التطبيق مرنًا وسهل الاستخدام." />
+    <!-- ايقونة علامةالتبويب-->
+    <link rel="shortcut icon" href="/img/logo.png">
+</head>
+
+<body>
+
+    <div id="more_header" class="animate__animated animate__fadeIn">
+
+        <img src="/img/back.png" id="back">
+
+        <p id="more_header_title">
+            الإعدادات
+        </p>
+
+    </div>
+
+    <div class="alert" id="alert">
+
+        <p class="text_alert" id="text_alert">
+            تم الحفظ
+        </p>
+
+    </div>
+
+    <div id="content" class="animate__animated animate__fadeIn">
+
+        <!-- ================ ضع هنا محتوى الصفحة =============== -->
+
+        <ul class="settings_ul">
+
+            <li>
+
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                        تحديث الموقع
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <img src="../img/refresh.png" id="refresh_location">
+                </div>
+
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                        طريقة حساب أوقات الصلاة
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <select id="Calculation_settings" size="1" class="select_sesettings">
+                        <option value="MuslimWorldLeague" id="MuslimWorldLeague">رابطة العالم الإسلامي</option>
+                        <option value="Egyptian" id="Egyptian">الهيئة المصرية العامة للمساحة</option>
+                        <option value="Karachi" id="Karachi">جامعة العلوم الإسلامية بكراتشي</option>
+                        <option value="UmmAlQura" id="UmmAlQura">جامعة أم القرى بمكة المكرمة</option>
+                        <option value="Dubai" id="Dubai">دبي</option>
+                        <option value="Qatar" id="Qatar">قطر</option>
+                        <option value="Kuwait" id="Kuwait">الكويت</option>
+                        <option value="Singapore" id="Singapore">سنغافورة وماليزيا وإندونيسيا</option>
+                        <option value="Turkey" id="Turkey">طريقة ديانت المستخدمة في تركيا</option>
+                        <option value="Tehran" id="Tehran">معهد الجيوفيزياء بجامعة طهران</option>
+                        <option value="NorthAmerica" id="NorthAmerica">يمكن استخدامه لأمريكا الشمالية</option>
+                    </select>
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                        حساب أوقات الصلاة - الشفق
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <select id="Shafaq_settings" size="1" class="select_sesettings">
+                        <option value="General" id="General">مزيج بين الأحمر والأبيض</option>
+                        <option value="Ahmer" id="Ahmer">أحمر</option>
+                        <option value="Abyad" id="Abyad">أبيض</option>
+                    </select>
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                     حساب أوقات الصلاة - المذهب
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <select id="madhab_settings" size="1" class="select_sesettings">
+                        <option value="Shafi" id="Shafi">الشافعي</option>
+                        <option value="Hanafi" id="Hanafi">الحنفي</option>
+                    </select>
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                      إحداثيات خط الطول
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <input type="text" id="settings_longitude" class="inp_number_settings" inputmode="numeric" placeholder="خط الطول (GPS)">
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                      إحداثيات خط العرض
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <input type="text" id="settings_latitude" class="inp_number_settings" inputmode="numeric" placeholder="خط العرض (GPS)">
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                      تعديل دقائق صلاة الفجر
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <input type="text" id="settings_fajr" class="inp_number_settings" inputmode="numeric">
+                </div>
+            </li>
+
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                      تعديل دقائق صلاة الظهر
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <input type="text" id="settings_dhuhr" class="inp_number_settings" inputmode="numeric">
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                      تعديل دقائق صلاة العصر
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <input type="text" id="settings_asr" class="inp_number_settings" inputmode="numeric">
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                      تعديل دقائق صلاة المغرب
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <input type="text" id="settings_maghrib" class="inp_number_settings" inputmode="numeric">
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                      تعديل دقائق صلاة العشاء
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <input type="text" id="settings_isha" class="inp_number_settings" inputmode="numeric">
+                </div>
+            </li>
+
+            <li>
+                <div class="settings_right">
+                    <h3 class="settings_title">
+                       إشعار بدخول وقت الصلاة
+                    </h3>
+                </div>
+
+                <div class="settings_left">
+                    <label class="switch" id="label_adhkar">
+                        <input type="checkbox" checked id="notifications_adhan">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </li> 
+
+
+        </ul>
+
+        <button id="settings_save">حفظ</button>
+
+        <!-- ================ ضع هنا محتوى الصفحة =============== -->
+
+    </div>
+
+
+    <footer id="footer">
+        <!-- الفوتر مربوط بالجافاسكربت -->
+    </footer>
+
+    
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>

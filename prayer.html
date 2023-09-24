@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/css/var.css"> <!-- المتغيرات -->
+    <link rel="stylesheet" href="/css/main.css"> <!-- ملف الإستايل الأساسي -->
+    <link rel="stylesheet" href="/css/footer.css"> <!-- ملف css الفوتر -->
+    <link rel="stylesheet" href="/css/prayer.css">
+    <link rel="stylesheet" href="/css/animate.min.css"> <!-- مؤثرات الإنتقال -->
+    <title>أوقات الصلاة الدقيقة: تتبع صلواتك اليومية مع التنبيهات الصوتية - التقوى</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="أوقات الصلاة الدقيقة: تتبع صلواتك اليومية مع التنبيهات الصوتية - التقوى">
+    <meta property="og:site_name" content="أوقات الصلاة الدقيقة: تتبع صلواتك اليومية مع التنبيهات الصوتية - التقوى">
+    <meta name="keywords" content="أوقات الصلاة، الصلاة الإسلامية، التنبيهات الصوتية للصلاة، جدول الصلاة، الفجر، الظهر، العصر، المغرب، العشاء، التقوى، الإيمان">
+    <!-- صورة المعاينة للصفحة -->
+    <meta property="og:image" content="/img/preview_prayer.jpg"/> 
+    <!-- وصف الصفحة -->
+    <meta property="og:description"
+        content="تعد هذه الصفحة أداة رائعة لأولئك الذين يرغبون في ضمان أداء صلواتهم الخمس (الفجر، الظهر، العصر، المغرب، العشاء) في الوقت المحدد كل يوم, بناءً على موقع المستخدم. يتم تحديث هذه الأوقات يوميًا لضمان دقتها." />
+    <!-- وصف الصفحة -->
+    <meta name="description"
+        content="تعد هذه الصفحة أداة رائعة لأولئك الذين يرغبون في ضمان أداء صلواتهم الخمس (الفجر، الظهر، العصر، المغرب، العشاء) في الوقت المحدد كل يوم, بناءً على موقع المستخدم. يتم تحديث هذه الأوقات يوميًا لضمان دقتها." />
+    <!-- ايقونة علامةالتبويب-->
+    <link rel="shortcut icon" href="/img/logo.png">
+</head>
+
+<body>
+
+
+    <div class="alert" id="alert">
+
+        <p class="text_alert">
+          الرجاء السماح بالوصول الى الموقع الجغرافي او قم بإدخال الإحداثيات بشكل يدوي من إعدادات التطبيق 
+        </p>
+
+    </div>
+
+    <div id="content" class="animate__animated animate__fadeIn">
+
+        <!-- ================ ضع هنا محتوى الصفحة =============== -->
+
+
+        <div id="prayer_time">
+
+            <div id="time">
+                <p id="hour_minutes">0</p>
+                <p id="seconds">: 00 PM</p>
+            </div>
+
+            <div id="data">
+                <p id="data_hijri"></p>
+                <p id="datoday"></p>
+                <p id="data_Gregorian"></p>
+            </div>
+
+            <p id="country"></p>
+
+            <ul id="prayer_ul">
+
+                <li id="fajr_li">
+                    <p id="fajr" class="slah">الفجر</p>
+                    <p id="time_fajr" class="time_prayer">0:00 AM</p>
+                </li>
+
+                <li id="dhuhr_li">
+                    <p id="dhuhr" class="slah">الظهر</p>
+                    <p id="time_dhuhr" class="time_prayer">0:00 PM</p>
+                </li>
+
+                <li id="asr_li">
+                    <p id="asr" class="slah">العصر</p>
+                    <p id="time_asr" class="time_prayer">0:00 PM</p>
+                </li>
+
+                <li id="maghrib_li">
+                    <p id="maghrib" class="slah">المغرب</p>
+                    <p id="time_maghrib" class="time_prayer">0:00 PM</p>
+                </li>
+
+                <li id="isha_li">
+                    <p id="isha" class="slah">العشاء</p>
+                    <p id="time_isha" class="time_prayer">0:00 PM</p>
+                </li>
+
+            </ul>
+
+            <p id="remaining">الوقت المتبقي لرفع الأذان لصلاة <span id="remaining_name"></span></p>
+            <p id="remaining_time">0:00</p>
+
+        </div>
+
+
+        <!-- ================ ضع هنا محتوى الصفحة =============== -->
+
+    </div>
+
+
+    <footer id="footer">
+        <!-- الفوتر مربوط بالجافاسكربت -->
+    </footer>
+    
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>
