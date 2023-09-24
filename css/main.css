@@ -23,9 +23,9 @@ html {
     /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;
     /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
     /* prevent copy paste, to allow, change 'none' to 'text' */
-    user-select: none;
+    /* user-select: none; */
     background-color: var(--background_body);
     font-size: 13px;
     font-weight: 400;
