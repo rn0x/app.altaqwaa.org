@@ -3,7 +3,7 @@ import error_handling from './modules/error_handling.js';
 
 export default async () => {
 
-    if (window.location.pathname.toLowerCase() === '/pages/tfs') {
+    if (window.location.pathname.toLowerCase() === '/pages/tfs' || window.location.pathname.toLowerCase() === '/pages/tfs.html') {
 
         try {
 

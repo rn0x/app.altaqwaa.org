@@ -5,7 +5,7 @@ import error_handling from './modules/error_handling.js';
 export default async () => {
 
 
-    if (window.location.pathname.toLowerCase() === '/pages/albitaqat') {
+    if (window.location.pathname.toLowerCase() === '/pages/albitaqat' || window.location.pathname.toLowerCase() === '/pages/albitaqat.html') {
 
         try {
 

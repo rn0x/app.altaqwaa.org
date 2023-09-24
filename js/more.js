@@ -2,7 +2,7 @@ import error_handling from "./modules/error_handling.js";
 
 export default async () => {
 
-    if (window.location.pathname.toLowerCase() === '/more') {
+    if (window.location.pathname.toLowerCase() === '/more' || window.location.pathname.toLowerCase() === '/more.html') {
 
         try {
 

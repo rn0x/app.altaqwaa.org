@@ -3,7 +3,7 @@ import error_handling from './modules/error_handling.js';
 
 export default async () => {
 
-    if (window.location.pathname.toLowerCase() === '/pages/radio') {
+    if (window.location.pathname.toLowerCase() === '/pages/radio' || window.location.pathname.toLowerCase() === '/pages/radio.html') {
 
         try {
 

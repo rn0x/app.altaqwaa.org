@@ -3,7 +3,7 @@ import loadJson from './modules/loadJson.js';
 
 export default async () => {
 
-    if (window.location.pathname.toLowerCase() === "/") {
+    if (window.location.pathname.toLowerCase() === "/" || window.location.pathname.toLowerCase() === "/index.html") {
 
         try {
             

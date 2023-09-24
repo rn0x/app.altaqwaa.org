@@ -3,7 +3,7 @@ import error_handling from './modules/error_handling.js';
 
 export default async () => {
 
-    if (window.location.pathname.toLowerCase() === '/quran') {
+    if (window.location.pathname.toLowerCase() === '/quran' || window.location.pathname.toLowerCase() === '/quran.html') {
 
         try {
 
